@@ -105,7 +105,7 @@
     "electron-json-storage": "4.1.0",
     "electron-log": "^4.2.4",
     "electron-save-file": "1.0.2",
-    "electron-updater": "^4.3.5",
+    "electron-updater": "^6.3.0",
     "es6-promisify": "5.0.0",
     "file-loader": "3.0.1",
     "flow-typed": "2.5.1",
