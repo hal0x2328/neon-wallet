@@ -146,7 +146,7 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cityofzion/neon-api@^4.9.0":
+"@cityofzion/neon-api@^4.0.0", "@cityofzion/neon-api@^4.9.0":
   version "4.9.0"
   resolved "https://registry.npmjs.org/@cityofzion/neon-api/-/neon-api-4.9.0.tgz"
   dependencies:
@@ -163,7 +163,7 @@
     isomorphic-ws "4.0.1"
     ws "7.4.4"
 
-"@cityofzion/neon-core@^4.9.0":
+"@cityofzion/neon-core@^4.0.0", "@cityofzion/neon-core@^4.9.0":
   version "4.9.0"
   resolved "https://registry.npmjs.org/@cityofzion/neon-core/-/neon-core-4.9.0.tgz"
   dependencies:
@@ -217,24 +217,14 @@
     "@cityofzion/neon-api" "^5.0.0-next.16"
     "@cityofzion/neon-core" "^5.0.0-next.16"
 
-"@cityofzion/neon-js@3.11.9":
-  version "3.11.9"
-  resolved "https://registry.npmjs.org/@cityofzion/neon-js/-/neon-js-3.11.9.tgz"
+"@cityofzion/neon-js@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@cityofzion/neon-js/-/neon-js-4.0.0.tgz#4d09f2fd551868e5bf1435d9f1b9f0ae017f33dc"
+  integrity sha512-dM60r/CiqW/Ls1DQ0p1OFXEXFfjWsYVKc81fW/TruTk9mUF1kiICKL1ZEiHq1SQBvM2Lmo1/Br5arWsR1tOafw==
   dependencies:
-    axios "0.18.0"
-    bignumber.js "5.0.0"
-    bn.js "^4.11.8"
-    bs58 "4.0.1"
-    bs58check "2.1.2"
-    crypto-js "3.1.9-1"
-    elliptic "6.4.1"
-    js-scrypt "0.2.0"
-    loglevel "1.6.1"
-    loglevel-plugin-prefix "0.8.4"
-    scrypt-js "2.0.4"
-    secure-random "1.1.1"
-    semver "5.6.0"
-    wif "2.0.6"
+    "@cityofzion/neon-api" "^4.0.0"
+    "@cityofzion/neon-core" "^4.0.0"
+    "@cityofzion/neon-nep5" "^4.0.0"
 
 "@cityofzion/neon-ledger-next@npm:@cityofzion/neon-ledger@5.0.0-next.14":
   version "5.0.0-next.14"
@@ -243,7 +233,7 @@
     "@ledgerhq/hw-transport" "5.51.1"
     "@types/ledgerhq__hw-transport" "4.21.3"
 
-"@cityofzion/neon-nep5@^4.9.0":
+"@cityofzion/neon-nep5@^4.0.0", "@cityofzion/neon-nep5@^4.9.0":
   version "4.9.0"
   resolved "https://registry.npmjs.org/@cityofzion/neon-nep5/-/neon-nep5-4.9.0.tgz"
   dependencies:
@@ -1395,18 +1385,20 @@ axios-retry@3.1.1:
   dependencies:
     is-retry-allowed "^1.1.0"
 
-axios@0.18.0:
-  version "0.18.0"
-  resolved "https://registry.npmjs.org/axios/-/axios-0.18.0.tgz"
-  dependencies:
-    follow-redirects "^1.3.0"
-    is-buffer "^1.1.5"
-
 axios@0.21.1:
   version "0.21.1"
   resolved "https://registry.npmjs.org/axios/-/axios-0.21.1.tgz"
   dependencies:
     follow-redirects "^1.10.0"
+
+axios@1.7.8:
+  version "1.7.8"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.8.tgz#1997b1496b394c21953e68c14aaa51b7b5de3d6e"
+  integrity sha512-Uu0wb7KNqK2t5K+YQyVCLM76prD5sRFjKHbJYCP1J7JFGEQ6nN7HWn9+04LAeiJ3ji54lgS/gZCH1oxyrf1SPw==
+  dependencies:
+    follow-redirects "^1.15.6"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 axobject-query@^2.0.2:
   version "2.2.0"
@@ -2400,10 +2392,6 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.9:
   version "4.11.9"
   resolved "https://registry.npmjs.org/bn.js/-/bn.js-4.11.9.tgz"
 
-bn.js@^4.11.8, bn.js@^4.4.0:
-  version "4.12.0"
-  resolved "https://registry.npmjs.org/bn.js/-/bn.js-4.12.0.tgz"
-
 bn.js@^5.1.1:
   version "5.1.3"
   resolved "https://registry.npmjs.org/bn.js/-/bn.js-5.1.3.tgz"
@@ -3301,7 +3289,7 @@ colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/colors/-/colors-1.1.2.tgz"
 
-combined-stream@^1.0.6, combined-stream@~1.0.6:
+combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz"
   dependencies:
@@ -3705,10 +3693,6 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
     randomfill "^1.0.3"
-
-crypto-js@3.1.9-1:
-  version "3.1.9-1"
-  resolved "https://registry.npmjs.org/crypto-js/-/crypto-js-3.1.9-1.tgz"
 
 crypto-js@4.0.0:
   version "4.0.0"
@@ -4633,18 +4617,6 @@ electron@8.5.5:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
     extract-zip "^1.0.3"
-
-elliptic@6.4.1:
-  version "6.4.1"
-  resolved "https://registry.npmjs.org/elliptic/-/elliptic-6.4.1.tgz"
-  dependencies:
-    bn.js "^4.4.0"
-    brorand "^1.0.1"
-    hash.js "^1.0.0"
-    hmac-drbg "^1.0.0"
-    inherits "^2.0.1"
-    minimalistic-assert "^1.0.0"
-    minimalistic-crypto-utils "^1.0.0"
 
 elliptic@6.5.4, elliptic@^6.5.3:
   version "6.5.4"
@@ -5691,9 +5663,10 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.1"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.13.1.tgz"
 
-follow-redirects@^1.3.0:
-  version "1.14.1"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.1.tgz"
+follow-redirects@^1.15.6:
+  version "1.15.9"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.9.tgz#a604fa10e443bf98ca94228d9eebcc2e8a2c8ee1"
+  integrity sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==
 
 for-in@^0.1.3:
   version "0.1.8"
@@ -5718,6 +5691,15 @@ for-own@^1.0.0:
 forever-agent@~0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz"
+
+form-data@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.1.tgz#ba1076daaaa5bfd7e99c1a6cb02aa0a5cff90d48"
+  integrity sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
 
 form-data@~2.3.2:
   version "2.3.3"
@@ -5919,10 +5901,6 @@ gaze@^1.0.0, gaze@~1.1.2:
   resolved "https://registry.npmjs.org/gaze/-/gaze-1.1.3.tgz"
   dependencies:
     globule "^1.0.0"
-
-generic-pool@~2.0.4:
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/generic-pool/-/generic-pool-2.0.4.tgz"
 
 get-caller-file@^1.0.1:
   version "1.0.3"
@@ -6381,7 +6359,7 @@ history@^4.7.2:
     tiny-warning "^1.0.0"
     value-equal "^1.0.1"
 
-hmac-drbg@^1.0.0, hmac-drbg@^1.0.1:
+hmac-drbg@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/hmac-drbg/-/hmac-drbg-1.0.1.tgz"
   dependencies:
@@ -6927,7 +6905,7 @@ is-boolean-object@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/is-boolean-object/-/is-boolean-object-1.0.1.tgz"
 
-is-buffer@^1.1.5, is-buffer@~1.1.6:
+is-buffer@~1.1.6:
   version "1.1.6"
   resolved "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz"
 
@@ -7627,12 +7605,6 @@ js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.6.4"
   resolved "https://registry.npmjs.org/js-base64/-/js-base64-2.6.4.tgz"
 
-js-scrypt@0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/js-scrypt/-/js-scrypt-0.2.0.tgz"
-  dependencies:
-    generic-pool "~2.0.4"
-
 js-string-escape@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/js-string-escape/-/js-string-escape-1.0.1.tgz"
@@ -8183,10 +8155,6 @@ loglevel-plugin-prefix@0.8.4:
   version "0.8.4"
   resolved "https://registry.npmjs.org/loglevel-plugin-prefix/-/loglevel-plugin-prefix-0.8.4.tgz"
 
-loglevel@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.npmjs.org/loglevel/-/loglevel-1.6.1.tgz"
-
 loglevel@1.7.1:
   version "1.7.1"
   resolved "https://registry.npmjs.org/loglevel/-/loglevel-1.7.1.tgz"
@@ -8499,7 +8467,7 @@ minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz"
 
-minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
+minimalistic-crypto-utils@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz"
 
@@ -10072,6 +10040,11 @@ proxy-addr@~2.0.5:
     forwarded "~0.1.2"
     ipaddr.js "1.9.1"
 
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
 prr@~1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/prr/-/prr-1.0.1.tgz"
@@ -11218,10 +11191,6 @@ schema-utils@^2.6.5:
     ajv "^6.12.4"
     ajv-keywords "^3.5.2"
 
-scrypt-js@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/scrypt-js/-/scrypt-js-2.0.4.tgz"
-
 scrypt-js@3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/scrypt-js/-/scrypt-js-3.0.1.tgz"
@@ -11236,10 +11205,6 @@ scss-tokenizer@^0.2.3:
 sdp@^1.0.0:
   version "1.5.4"
   resolved "https://registry.npmjs.org/sdp/-/sdp-1.5.4.tgz"
-
-secure-random@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/secure-random/-/secure-random-1.1.1.tgz"
 
 secure-random@1.1.2:
   version "1.1.2"
@@ -11278,10 +11243,6 @@ semver-diff@^3.1.1:
 semver@5.3.0, semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.npmjs.org/semver/-/semver-5.3.0.tgz"
-
-semver@5.6.0:
-  version "5.6.0"
-  resolved "https://registry.npmjs.org/semver/-/semver-5.6.0.tgz"
 
 semver@^6.0.0, semver@^6.1.2, semver@^6.2.0, semver@^6.3.0:
   version "6.3.0"
